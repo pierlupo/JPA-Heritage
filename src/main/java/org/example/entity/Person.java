@@ -11,8 +11,9 @@ public abstract class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "name")
+    @Column(name = "last_name")
     public String lastName;
+    @Column(name = "first_name")
     public String firstName;
     @Transient
     private int age;
